@@ -111,7 +111,9 @@ var kk = (function(Ink){
 
         return this;
     };
-
+    Result.prototype.on = function(event,calable){
+        return this.bind(event,calable);
+    };
     Result.prototype.click = function(calable){
         return this.bind('click',calable);
     };
